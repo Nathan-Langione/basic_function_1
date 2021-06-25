@@ -83,7 +83,9 @@ function a(){
 a();
 
 
-/*  */
+/* Takes parameters b and c. Then will console log values from b, incremented by 1, as long as i is less than c. Then returns b times c.
+When the function is called the first time will print 0-9 to the screen  and return 0.
+When the function is called the second time it will print 0-9 to the screen and then print 0 which is returned by the function.*/
 function a(b,c){
     for(var i=b; i<c; i++) {
         console.log(i);
@@ -94,7 +96,8 @@ a(0,10);
 console.log(a(0,10));
 
 
-/*  */
+/*  Function takes no parameters and returns no values. The nested for loop will log 0-9 to the console and it will be run 10 times by the first for loop. 
+Every time 0-9 is printed to the screen the value of i from the first loop will be logged to the console.*/
 function a(){
     for(var i=0; i<10; i++){
         for(var j=0; j<10; j++){
@@ -105,7 +108,14 @@ function a(){
 }
 
 
-/*  */
+/*  Function takes no parameters and returns no values. The nested for loop will log the values of i and j 10 times. then the first for loop will log the values of i and j 10 times.
+Results would be:
+0, 1
+0, 2
+...
+0, 9
+undefined, 0
+The repeat each time i is incremented*/
 function a(){
     for(var i=0; i<10; i++){
         for(var j=0; j<10; j++){
@@ -116,7 +126,7 @@ function a(){
 }
 
 
-/*  */
+/* Function takes no parameters and returns no values. The console log will print 10 as we do not call the function. */
 var z = 10;
 function a(){
     var z = 15;
@@ -125,7 +135,8 @@ function a(){
 console.log(z);
 
 
-/*  */
+/* * Function takes no parameters and returns no values. When the function is executed it will print 15 tot he console 
+then the log statement outside the function will print 10 to the console/ */
 var z = 10;
 function a(){
     var z = 15;
@@ -135,7 +146,8 @@ a();
 console.log(z);
 
 
-/*  */
+/* Function takes no parameters and returns z. When th function is executed it will print 15 to the console and return 15 and store it in the variable z. 
+The console log statement will then print 15 to the console. */
 var z = 10;
 function a(){
     var z = 15;
