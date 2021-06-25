@@ -52,7 +52,7 @@ console.log(a(15));
 
 
 /* Takes parameters b and c, multiplies them, and returns the result. 10 and 3 will be printed to the console by the first log statement 
-and then 30 will be returned by the second log statement which calls the function. */
+and then 30 will be printed by the second log statement which calls the function. */
 function a(b,c){
     return b*c;
 }
@@ -61,7 +61,7 @@ console.log( a(3,10) );
 
 
 /*  Takes parameter b, but does nothing with it. The for loop prints i to the console 10 times and then i is returned. 
-The numbers 0-9 will be printed to the screen on separate lines for each pf the two log statements where the function is executed.  */
+The function is not called so the two log statements print 3 and then 4.  */
 function a(b){
     for(var i=0; i<10; i++){
         console.log(i);
@@ -97,7 +97,7 @@ console.log(a(0,10));
 
 
 /*  Function takes no parameters and returns no values. The nested for loop will log 0-9 to the console and it will be run 10 times by the first for loop. 
-Every time 0-9 is printed to the screen the value of i from the first loop will be logged to the console.*/
+Every time 0-9 is printed to the screen the value of i from the first loop will be logged to the console. We do not call the function so nothing happens.*/
 function a(){
     for(var i=0; i<10; i++){
         for(var j=0; j<10; j++){
@@ -109,12 +109,12 @@ function a(){
 
 
 /*  Function takes no parameters and returns no values. The nested for loop will log the values of i and j 10 times. then the first for loop will log the values of i and j 10 times.
-Results would be:
+We dp mot call the function, but if we did results would be:
 0, 1
 0, 2
 ...
 0, 9
-undefined, 0
+10, 0
 The repeat each time i is incremented*/
 function a(){
     for(var i=0; i<10; i++){
@@ -135,7 +135,7 @@ function a(){
 console.log(z);
 
 
-/* * Function takes no parameters and returns no values. When the function is executed it will print 15 tot he console 
+/* * Function takes no parameters and returns no values. When the function is executed it will print 15 to the console 
 then the log statement outside the function will print 10 to the console/ */
 var z = 10;
 function a(){
